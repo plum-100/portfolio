@@ -1,0 +1,902 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+
+.nanumgothiccoding * {
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: bottom;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+address {
+    font-style: normal;
+}
+
+.wrap,
+.title_text {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* 네비 기본 */
+.hwrap {
+    position: relative;
+    width: 100%;
+}
+
+nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: solid 1px white;
+    z-index: 200;
+    transition: all 0.3s ease 0s;
+    box-sizing: border-box;
+    height: 120px;
+}
+
+.navwrap {
+    padding: 10px;
+    width: 1400px;
+}
+
+nav h1 {
+    float: left;
+    padding-top: 10px;
+}
+
+nav .logo_c {
+    display: none;
+    position: absolute;
+}
+
+.mainnav {
+    position: relative;
+    float: left;
+    margin: 40px 40px 0;
+}
+
+.mainnav>li {
+    float: left;
+    font-family: 'MaruBuri-Regular';
+    font-size: 20px;
+    padding: 0 45px 90px 45px;
+}
+
+nav a {
+    color: white;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    width: 900px;
+}
+
+.subnav li {
+    float: left;
+    margin-left: 45px;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 130px;
+    text-align: left;
+}
+
+.subnav a {
+    font-size: 18px;
+}
+
+.my {
+    float: right;
+}
+
+.default img {
+    margin: 30px 0 0 25px;
+}
+
+.hover {
+    position: absolute;
+    width: 160px;
+    display: none;
+}
+
+.hover img {
+    margin: 30px 0 0 25px;
+}
+
+.join {
+    float: right;
+    margin: 45px 50px 0 0;
+    font-family: 'GmarketSansMedium';
+}
+
+.join li {
+    padding: 0 25px;
+    border-right: solid 1px white;
+    line-height: 1em;
+}
+
+.join li:nth-of-type(2) {
+    border: 0;
+}
+
+.my li,
+.join li {
+    float: left;
+    font-weight: normal;
+}
+
+.navbg {
+    width: 100%;
+    height: 200px;
+    background: white;
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: -300;
+    opacity: 0.6;
+}
+
+/* 네비 호버 */
+
+nav:hover {
+    border-color: #444;
+}
+
+nav:hover .logo_c {
+    display: block;
+}
+
+nav:hover a {
+    color: #757575;
+}
+
+nav:hover .join li {
+    border-color: #777777;
+}
+
+.mainnav>li:hover>a {
+    color: #ff8686;
+}
+
+.subnav li:hover a {
+    font-weight: bold;
+}
+
+nav:hover .hover {
+    display: block;
+}
+
+
+/* 메인 기본 */
+
+.main {
+    margin: 0 auto;
+    width: 1920px;
+    height: 940px;
+    position: relative;
+}
+
+.main_img>li {
+    position: absolute;
+    display: none;
+}
+
+
+.main_arrow {
+    width: 1750px;
+    left: 0;
+    right: 0;
+    top: 450px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.main_arrow a:nth-of-type(2) img {
+    float: right;
+}
+
+.main_arrow img {
+    opacity: 0.5;
+}
+
+
+.title_text {
+    position: absolute;
+    top: 280px;
+    left: 255px;
+}
+
+.title_text h3 {
+    font-family: 'GmarketSansMedium';
+    color: white;
+    font-weight: normal;
+    font-size: 55px;
+    line-height: 1.3em;
+    margin-bottom: 30px;
+}
+
+.title_text p {
+    font-family: 'MaruBuri-Regular';
+    color: white;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+
+.title_text img {
+    position: absolute;
+}
+
+
+.roundarrow {
+    display: inline-block;
+    width: 49px;
+    height: 49px;
+    background: url(../images/round_arrow.png);
+    position: absolute;
+    left: 255px;
+    top: 550px;
+    transition: all 0.2s;
+}
+
+.roundarrow:hover {
+    background: url(../images/round_arrow_hover.png);
+    width: 49px;
+    height: 49px;
+}
+
+
+.indicator {
+    position: absolute;
+    top: 700px;
+}
+
+.indicator p:first-child {
+    margin-right: 200px;
+}
+
+.indicator_back {
+    width: 180px;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    top: 12px;
+    opacity: 0.4;
+}
+
+.indicator_bar {
+    width: 60px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 12px;
+}
+
+
+/* 메인 호버 */
+
+
+/* 브랜드 */
+
+.brand {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.brand p {
+    font: normal 30px/1.4em 'MaruBuri-Regular';
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.brand p span {
+    font: normal 17px/1.4em 'MaruBuri-Regular';
+    color: #969696;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.brand li {
+    display: inline-block;
+    width: 450px;
+    position: relative;
+    opacity: 0;
+}
+
+.brand_view {
+    width: 349px;
+    height: 440px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-radius: 165px 165px 0 0;
+    box-sizing: border-box;
+    padding-top: 230px;
+}
+
+.brand li a {
+    display: block;
+    text-align: center;
+    width: 450px;
+    height: 440px;
+}
+
+.brand li p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #eeeeee;
+    font: normal 20px 'GmarketSansMedium';
+    z-index: 100;
+    display: none;
+}
+
+.brand li a span {
+    display: inline-block;
+    width: 450px;
+    margin: 25px 0;
+    font: normal 20px/1.4em 'MaruBuri-Regular';
+    color: #777;
+}
+
+.brand li img {
+    border-radius: 165px 165px 0 0;
+}
+
+
+/* 신상품 */
+
+.new {
+    width: 100%;
+    background: #f8f7f6;
+    position: relative;
+    height: 740px;
+}
+
+.newwrap {
+    padding: 100px;
+    position: relative;
+}
+
+.newwrap>p {
+    position: absolute;
+    left: 920px;
+    top: 150px;
+    width: 265px;
+    height: 50px;
+    text-align: center;
+    background: url(../images/new_frame.png);
+    color: #48605e;
+    font: normal 20px/52px 'MaruBuri-Regular';
+}
+
+.new_text {
+    position: absolute;
+    left: 920px;
+    top: 270px;
+}
+
+.new_text h3 {
+    color: #666;
+    font: bold 36px/1em 'MaruBuri-Regular';
+    margin-bottom: 40px;
+}
+
+.new_text h3 span {
+    display: block;
+    color: #777;
+    font: normal 24px/1em 'MaruBuri-Regular';
+    margin-bottom: 30px;
+}
+
+.new_text p {
+    color: #777;
+    font: normal 16px/1.6em 'MaruBuri-Regular';
+    margin-bottom: 30px;
+    margin-top: 42px;
+}
+
+.page {
+    color: #777;
+    font: normal 16px/1.6em 'GmarketSansMedium';
+    position: absolute;
+    right: 100px;
+    bottom: -360px;
+}
+
+.page span {
+    color: #777;
+    font: normal 23px/1.6em 'GmarketSansMedium';
+}
+
+.newwrap .go {
+    position: absolute;
+    top: 500px;
+    left: 920px;
+    display: block;
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    border: solid 1px #626262;
+    font: normal 15px/50px 'MaruBuri-Regular';
+    color: #626262;
+    transition: all 0.15s ease 0s;
+}
+
+
+.newarrow {
+    width: 1750px;
+    left: 0;
+    right: 0;
+    top: 350px;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.newarrow a:nth-of-type(2) img {
+    float: right;
+}
+
+.newarrow img {
+    filter: invert(0.5);
+    opacity: 0.15;
+}
+
+
+.new_product li img {
+    position: absolute;
+}
+
+
+/* 신상품 호버*/
+
+.newwrap .go:hover {
+    color: white;
+    background: #626262;
+}
+
+
+/* 공지 */
+
+.info {
+    width: 1400px;
+    margin: 0 auto;
+    padding: 150px 0;
+    overflow: hidden;
+}
+
+.info_left {
+    width: 1000px;
+    float: left;
+    font-family: 'MaruBuri-Regular';
+}
+
+.notice,
+.call,
+.account {
+    float: left;
+}
+
+.notice {
+    width: 950px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #ddd;
+}
+
+.call {
+    border-right: solid 1px #ddd;
+}
+
+.account {
+    padding-left: 55px;
+}
+
+.call,
+.account {
+    width: 475px;
+    box-sizing: border-box;
+}
+
+.notice {
+    position: relative;
+}
+
+.notice h3 {
+    color: #4e5f5e;
+    font: normal 25px 'GmarketSansMedium';
+    float: left;
+    margin-right: 50px;
+}
+
+
+.list_wrap {
+    width: 500px;
+    height: 30px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.notice_list li {
+    position: absolute;
+    left: 150px;
+}
+
+.notice_list li a {
+    float: left;
+    color: #666;
+    font-size: 16px;
+    line-height: 27px;
+    display: block;
+    width: 400px;
+}
+
+.notice>a {
+    float: right;
+    opacity: 0.6;
+}
+
+.call h3,
+.account h3 {
+    font-weight: normal;
+    color: #777;
+}
+
+.call .phonenum {
+    color: #666;
+    font: bold 40px 'MaruBuri-Regular';
+    margin: 10px 0;
+}
+
+.call p,
+.account p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+.account .accountnum {
+    color: #666;
+    font: bold 22px 'MaruBuri-Regular';
+    margin: 10px 0;
+}
+
+.account a {
+    display: inline-block;
+    width: 180px;
+    height: 45px;
+    line-height: 25px;
+    padding: 10px 0 10px 20px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.qna {
+    background: #bda995;
+}
+
+.faq {
+    background: #4e5f5e;
+}
+
+.account a span {
+    margin-left: 85px;
+    border: solid 1px white;
+    padding: 0 5px;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+
+.info_right {
+    float: right;
+}
+
+.info_right img {
+    transition: all 0.2s;
+}
+
+.info_right img:hover {
+    opacity: 0.9;
+}
+
+.reviewwrap {
+    width: 1400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.reviewwrap ul {
+    width: 2150px;
+    position: absolute;
+    top: 60px;
+    left: -357px;
+}
+
+.reviewwrap ul>li {
+    position: absolute;
+}
+
+
+.review {
+    clear: both;
+    background: #f3f2e4;
+    padding: 100px 0;
+    font-family: 'MaruBuri-Regular';
+    overflow: hidden;
+}
+
+.reviewwrap>h3 {
+    float: left;
+    font: normal 40px 'GmarketSansMedium';
+    height: 50px;
+    color: #4e5f5e;
+    margin-bottom: 40px;
+}
+
+.reviewwrap>h3 span {
+    margin-left: 35px;
+    font-family: 'MaruBuri-Regular';
+    color: #666;
+    font-size: 18px;
+}
+
+.review .arrow {
+    float: right;
+    color: #adadad;
+    padding-top: 15px;
+    font-size: 25px;
+}
+
+.review .arrow a:hover {
+    font-weight: bold;
+    color: #777;
+}
+
+.review .arrow a {
+    color: #8b8b8b;
+}
+
+.review ul {
+    clear: both;
+    margin-top: 20px;
+}
+
+.review ul li {
+    float: left;
+    width: 327px;
+    margin-right: 30px;
+    background: white;
+}
+
+.review ul li:nth-of-type(4) {
+    /* margin-right: 0; */
+}
+
+.review .text {
+    padding: 25px 20px 20px;
+    overflow: hidden;
+}
+
+.review .text h3 {
+    width: 327px;
+    color: #555;
+    font-weight: normal;
+}
+
+.review .text p {
+    margin: 10px 0 20px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.review .text .score {
+    float: left;
+    color: #ed978f;
+}
+
+.review .text .score span {
+    color: #c4c4c4;
+}
+
+.review .text .name {
+    float: right;
+    color: #afafaf;
+}
+
+footer {
+    background: #4e5f5e;
+    padding: 40px 0;
+    color: #96a4a3;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.fwrap {
+    position: relative;
+}
+
+footer h1,
+footer address {
+    float: left;
+    clear: left;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+footer h1 {
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #96a4a3;
+}
+
+.sns,
+.fnav {
+    position: absolute;
+}
+
+.sns {
+    top: 65px;
+    right: 0;
+}
+
+.fnav {
+    top: 125px;
+    right: -10px;
+}
+
+.fnav li,
+.sns li {
+    float: left;
+}
+
+.fnav li:nth-of-type(3) a {
+    border: 0;
+}
+
+.fnav li a {
+    line-height: 0.5em;
+    border-right: solid 1px #96a4a3;
+    font-family: 'Nanum Gothic Coding', monospace;
+    padding: 0 15px;
+}
+
+.blog,
+.youtube,
+.insta {
+    opacity: 0.3;
+    filter: invert(1);
+}
+
+.blog a,
+.youtube a,
+.insta a {
+    border: solid 1px black;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.blog {
+    background: url(../images/blog_icon.png) no-repeat center 4px;
+}
+
+.youtube {
+    background: url(../images/youtube_icon.png) no-repeat center 7px;
+}
+
+.insta {
+    background: url(../images/insta_icon.png) no-repeat center 6px;
+}
+
+.sns li {
+    margin-left: 10px;
+}
+
+.sns li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+
+.popup {
+    position: absolute;
+    z-index: 999;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    width: 450px;
+    height: 520px;
+    background: url(../images/popup_bg.jpg) center top;
+    border: solid 5px #346969;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #6666667a;
+}
+
+.popup h3 {
+    color: #346969;
+    font: normal 35px/45px 'GmarketSansMedium';
+    margin-top: 50px;
+}
+
+.popup span {
+    font-family: 'GmarketSansBold';
+}
+
+.popup p {
+    font: normal 20px/35px 'MaruBuri-Regular';
+    color: #666;
+}
+
+.popup .present {
+    font: normal 15px/22px 'MaruBuri-Regular';
+    margin-top: 15px;
+}
+
+.popup a {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin: 200px 25px 0 0;
+    background: none;
+    border: solid 2px #000;
+    border-radius: 50%;
+    font: normal 20px/43px 'GmarketSansMedium';
+    color: #000;
+}
